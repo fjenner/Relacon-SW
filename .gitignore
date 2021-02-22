@@ -1,0 +1,7 @@
+# Common editor backup files
+*.swp
+*.swo
+*.bak
+
+# Common CMake build directory
+build/

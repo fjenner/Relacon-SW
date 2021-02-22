@@ -1,0 +1,11 @@
+# For the hidapi-libusb implementation
+ATTR{idVendor}=="0a07", ATTR{idProduct}=="00c8", MODE="0660", GROUP="plugdev"
+ATTR{idVendor}=="0a07", ATTR{idProduct}=="00d0", MODE="0660", GROUP="plugdev"
+ATTR{idVendor}=="0a07", ATTR{idProduct}=="00da", MODE="0660", GROUP="plugdev"
+ATTR{idVendor}=="1209", ATTR{idProduct}=="fa70", MODE="0660", GROUP="plugdev"
+
+# For the hidapi-hidraw implementation
+KERNEL=="hidraw*", ATTRS{idVendor}=="0a07", ATTRS{idProduct}=="00c8", MODE="0660", GROUP="plugdev"
+KERNEL=="hidraw*", ATTRS{idVendor}=="0a07", ATTRS{idProduct}=="00d0", MODE="0660", GROUP="plugdev"
+KERNEL=="hidraw*", ATTRS{idVendor}=="0a07", ATTRS{idProduct}=="00da", MODE="0660", GROUP="plugdev"
+KERNEL=="hidraw*", ATTRS{idVendor}=="1209", ATTRS{idProduct}=="fa70", MODE="0660", GROUP="plugdev"
